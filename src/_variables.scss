@@ -1,0 +1,33 @@
+$brown: rgb(87, 52, 38);
+$grey: rgba(143, 136, 136, 0.5);
+
+$shadow-light: rgba(181, 180, 180, 0.63);
+$shadow-dark: rgba(0, 0, 0, 0.09);
+
+$box-shadow: 0 0 0 1.5px $shadow-light, 0 2px 5px 0 $shadow-dark;
+
+$spacing-small: 0.3rem;
+$spacing-medium: 1rem;
+
+$line-height: 1.5;
+
+$font-size-button-desktop: 1rem;
+$font-size-button-netbook-tablet: 0.95rem;
+$font-size-button-mobile: 0.9rem;
+
+$font-size-title-desktop:2.2rem;
+$font-size-title-netbook-tablet:1.6rem;
+$font-size-title-mobile: 1.3rem;
+
+$font-size-second-title-desktop:1.8rem;
+$font-size-second-title-netbook-tablet:1.4rem;
+$font-size-second-title-mobile: 1.1rem;
+
+
+@font-face {
+  font-family: 'Heading-Font';
+  src: url('/assets/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+}
+
+
+$font-family: 'Heading-Font', sans-serif;

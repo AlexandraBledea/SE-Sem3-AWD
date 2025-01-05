@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SE-Sem3-AWD';
+
+  scrollToNextSection() {
+    const nextSection = document.getElementById('history-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
