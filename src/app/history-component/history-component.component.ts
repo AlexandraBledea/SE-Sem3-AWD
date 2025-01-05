@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HistoryComponentComponent {
 
+  scrollToNextSection() {
+    const nextSection = document.getElementById('feeling-vs-emotion-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "layers-of-feeling"
+  },
+  "targets": {
+    "layers-of-feeling": {
+      "hosting": {
+        "SE-Sem3-AWD": [
+          "layers-of-feeling"
+        ]
+      }
+    }
+  }
+}

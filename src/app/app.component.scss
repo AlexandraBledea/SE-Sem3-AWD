@@ -10,7 +10,7 @@
     background-image: url("/assets/2.jpg");
     background-size: cover;
     background-position: 70% 50%;
-    gap: 3em;
+    gap: $spacing-xl;
 
   &__title {
     width:80%;

@@ -8,7 +8,7 @@ import { HistoryComponentComponent } from './history-component/history-component
 @NgModule({
   declarations: [
     AppComponent,
-    HistoryComponentComponent
+    HistoryComponentComponent,
   ],
   imports: [
     BrowserModule,

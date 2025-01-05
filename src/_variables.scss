@@ -1,5 +1,8 @@
 $brown: rgb(87, 52, 38);
+$dark-cherry: rgb(85, 0, 33);
+$cherry: rgb(221, 11, 54);
 $grey: rgba(143, 136, 136, 0.5);
+$nude: #efe1d1;
 
 $shadow-light: rgba(181, 180, 180, 0.63);
 $shadow-dark: rgba(0, 0, 0, 0.09);
@@ -23,6 +26,11 @@ $font-size-second-title-desktop:1.8rem;
 $font-size-second-title-netbook-tablet:1.4rem;
 $font-size-second-title-mobile: 1.1rem;
 
+$spacing-xs: 0.5rem;
+$spacing-s: 1rem;
+$spacing-m: 1.5rem;
+$spacing-l: 2rem;
+$spacing-xl: 3rem;
 
 @font-face {
   font-family: 'Heading-Font';
@@ -31,3 +39,9 @@ $font-size-second-title-mobile: 1.1rem;
 
 
 $font-family: 'Heading-Font', sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

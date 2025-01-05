@@ -1,0 +1,25 @@
+{
+  "emulators": {
+    "dataconnect": {
+      "dataDir": "dataconnect/.dataconnect/pgliteData"
+    }
+  },
+  "dataconnect": {
+    "source": "dataconnect"
+  },
+  "hosting": [
+    {
+      "public": "dist/se-sem3-awd",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "SE-Sem3-AWD",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
