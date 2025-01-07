@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     gap: $spacing-xl;
-    padding: 20px;
+    padding: $spacing-l;
   }
 
   &__image {
@@ -89,6 +89,22 @@
       gap: $spacing-xs;
     }
 
+  }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .text-box {
+    width: auto;
+  }
+
+  .title {
+    font-size: $font-size-second-title-netbook-tablet;
+  }
+
+  .image-container-info {
+    gap: $spacing-m;
+    padding: $spacing-m $spacing-s;
   }
 
 }

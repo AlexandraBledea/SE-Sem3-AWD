@@ -39,10 +39,9 @@
 
 .image-container-info {
   @include flex-center;
-  gap: $spacing-xl;
-
+  gap: $spacing-3xl;
+  padding: $spacing-m 0;
 }
-
 
 .image {
   max-width: 50%;
@@ -52,40 +51,53 @@
 }
 
 @media only screen and (max-width: 430px) {
-  .image {
-    width: 65%;
-    height: 60%;
-  }
-
   .title {
     font-size: $font-size-second-title-mobile;
+  }
+
+  .image-container-info {
+    flex-wrap: wrap;
+    gap: $spacing-m;
+    padding: $spacing-m;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .text-box {
+    width: auto;
   }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .text-box {
-    width: 40%;
+    width: auto;
   }
 
   .title {
     font-size: $font-size-second-title-netbook-tablet;
+  }
+
+  .image-container-info {
+    gap: $spacing-m;
+    padding: $spacing-m $spacing-s;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .text-box {
+    width: auto;
+  }
+
   .title {
     font-size: $font-size-second-title-netbook-tablet;
+  }
+
+  .image-container-info {
+    gap: $spacing-m;
+    padding: $spacing-m $spacing-m;
   }
 }
 
 
-//.image {
-  //width: 70%;
-  //height: 70%;
-  //margin: 0;
-  //padding: 0;
-  //background-size: contain;
-  //background-repeat: no-repeat;
-  //background-position: center;
-  //background-image: url("/assets/spark.png");
-//}
