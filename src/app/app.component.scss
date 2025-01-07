@@ -64,9 +64,11 @@
   }
 }
 
-app-history-component, app-feeling-vs-emotion, app-definitions {
-  //display: inline-block;
-  width: 100%;
-  //height: 100%;
-  //padding: 0;
+.separator {
+  border: none; /* Remove the default border */
+  height: 2px; /* Set the thickness of the line */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #6e3434;
+  width: 80%;
 }

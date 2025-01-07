@@ -68,6 +68,10 @@
   .text-box {
     width: auto;
   }
+
+  .text {
+    font-size: $font-size-mobile;
+  }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {

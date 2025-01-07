@@ -1,2 +1,112 @@
 @import "src/variables";
 
+:host {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: $font-size-second-title-desktop;
+  text-align: center;
+  font-family: $font-family;
+  color: $dark-cherry;
+}
+
+.text-box {
+  width: 60%;
+  padding: $spacing-xs;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: 40px;
+}
+
+.text {
+  text-align: center;
+  line-height: $line-height;
+  font-family: $font-family;
+  font-size: $font-size-mobile;
+  color: $brown;
+}
+
+.sub-title {
+  font-size: $font-size-sub-title-desktop;
+  text-align: center;
+  line-height: $line-height;
+  font-family: $font-family;
+  color: $dark-little-cherry;
+}
+
+.example, .sources {
+  font-size: $font-size-mobile;
+  padding-left: $spacing-m;
+  line-height: $line-height;
+  font-family: $font-family;
+  color: $brown;
+}
+
+.image-container-info {
+  @include flex-center;
+  gap: $spacing-3xl;
+  padding: $spacing-m 0;
+}
+
+.image {
+  max-width: 15%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 430px) {
+  .title {
+    font-size: $font-size-second-title-mobile;
+  }
+
+  .image-container-info {
+    flex-wrap: wrap;
+    gap: $spacing-m;
+    padding: $spacing-m;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .text-box {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .text-box {
+    width: auto;
+  }
+
+  .title {
+    font-size: $font-size-second-title-netbook-tablet;
+  }
+
+  .image-container-info {
+    gap: $spacing-m;
+    padding: $spacing-m $spacing-s;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .text-box {
+    width: auto;
+  }
+
+  .title {
+    font-size: $font-size-second-title-netbook-tablet;
+  }
+
+  .image-container-info {
+    gap: $spacing-m;
+    padding: $spacing-m $spacing-m;
+  }
+}
+
+

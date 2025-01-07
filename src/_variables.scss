@@ -1,10 +1,13 @@
-$brown: rgb(87, 52, 38);
+$brown: rgb(96, 64, 53);
+//$brown: rgb(87, 52, 38);
 $dark-cherry: rgb(85, 0, 33);
+$dark-little-cherry: rgb(154, 0, 87);
 $cherry: rgb(221, 11, 54);
 $grey: rgba(143, 136, 136, 0.5);
 $nude: #efe1d1;
 $beige: #efe6dd;
 $dark-beige: #efe6dd;
+$orange: #9a540e;
 
 $shadow-light: rgba(181, 180, 180, 0.63);
 $shadow-dark: rgba(0, 0, 0, 0.09);
@@ -27,7 +30,14 @@ $font-size-title-mobile: 1.3rem;
 
 $font-size-second-title-desktop:1.8rem;
 $font-size-second-title-netbook-tablet:1.4rem;
-$font-size-second-title-mobile: 1.1rem;
+$font-size-second-title-mobile: 1.2rem;
+
+$font-size-sub-title-desktop:1.2rem;
+$font-size-sub-title-netbook-tablet:1.1rem;
+$font-size-sub-title-mobile:1rem;
+
+$font-size-mobile: 0.9rem;
+
 
 $spacing-xs: 0.5rem;
 $spacing-s: 1rem;
@@ -40,7 +50,8 @@ $spacing-4xl: 6rem;
 
 @font-face {
   font-family: 'Heading-Font';
-  src: url('/assets/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+  //src: url('/assets/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+  src: url('/assets/Poppins/Poppins-Medium.ttf') format('truetype');
 }
 
 
