@@ -1,10 +1,19 @@
 @import "src/variables";
 
+:host {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
 .origin-section {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $beige;
+
 
   &__content-wrapper {
     @include flex-center;
@@ -33,11 +42,6 @@
 
   &__question {
     color: $cherry;
-    cursor: pointer;
-
-    &:active {
-      color: $dark-cherry;
-    }
   }
 
   &__text {
@@ -48,34 +52,20 @@
   }
 
   &__image-container {
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
+    justify-content: center;
+    gap: $spacing-xl;
+    padding: 20px;
   }
 
   &__image {
-    width: 90%;
-    height: 90%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &-left {
-      background-image: url("/assets/origin_1.jpg");
-    }
-
-    &-middle {
-      background-image: url("/assets/origin_2.jpg");
-    }
-
-    &-right {
-      background-image: url("/assets/origin_3.jpg");
-    }
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
   }
 }
+
 
 @media only screen and (max-width: 430px) {
   .origin-section {
@@ -89,12 +79,14 @@
     }
 
     &__image {
-      height: 55vh;
+      max-width: 100%; /* Adjusts the size of each image */
       margin: $spacing-xs;
     }
 
     &__image-container{
       flex-wrap: wrap;
+      padding: 20px;
+      gap: $spacing-xs;
     }
 
   }
