@@ -16,7 +16,7 @@
 
 .text-box {
   width: 60%;
-  padding: $spacing-xs;
+  padding: $spacing-s;
   background-color: white;
   box-shadow: var(--box-shadow);
   border-radius: 40px;
@@ -26,7 +26,6 @@
   text-align: center;
   line-height: $line-height;
   font-family: $font-family;
-  font-size: $font-size-mobile;
   color: $brown;
 }
 
@@ -39,8 +38,7 @@
 }
 
 .example, .sources {
-  font-size: $font-size-mobile;
-  padding-left: $spacing-m;
+  padding-left: $spacing-s;
   line-height: $line-height;
   font-family: $font-family;
   color: $brown;
@@ -53,7 +51,7 @@
 }
 
 .image {
-  max-width: 15%;
+  max-width: 20%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,11 +75,23 @@
   .text-box {
     width: auto;
   }
+
+  .example, .sources, .text {
+    font-size: $font-size-mobile;
+  }
+
+  .sub-title {
+    font-size: $font-size-sub-title-mobile;
+  }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+@media only screen and (min-width: 431px) and (max-width: 768px) {
   .text-box {
     width: auto;
+  }
+
+  .image {
+    max-width: 35%;
   }
 
   .title {
@@ -92,11 +102,23 @@
     gap: $spacing-m;
     padding: $spacing-m $spacing-s;
   }
+
+  .example, .sources, .text {
+    font-size: $font-size-netbook-tablet;
+  }
+
+  .sub-title {
+    font-size: $font-size-sub-title-netbook-tablet;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .text-box {
     width: auto;
+  }
+
+  .image {
+    max-width: 30%;
   }
 
   .title {
@@ -106,6 +128,14 @@
   .image-container-info {
     gap: $spacing-m;
     padding: $spacing-m $spacing-m;
+  }
+
+  .example, .sources, .text {
+    font-size: $font-size-netbook-tablet;
+  }
+
+  .sub-title {
+    font-size: $font-size-sub-title-netbook-tablet;
   }
 }
 

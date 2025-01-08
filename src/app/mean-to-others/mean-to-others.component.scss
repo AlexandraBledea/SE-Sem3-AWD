@@ -7,12 +7,10 @@
   box-sizing: border-box;
 }
 
-.comparison-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
+.variations-section {
+  @include flex-center;
+  gap: $spacing-s;
   flex-direction: column;
-  justify-content: center;
 }
 
 .title {
@@ -22,9 +20,16 @@
   color: $dark-cherry;
 }
 
+.info-container {
+  @include flex-center;
+  flex-direction: row;
+  gap: $spacing-m;
+}
+
 .text-box {
-  width: 30%;
-  padding: $spacing-xs;
+  width: 40%;
+  height: 50%;
+  padding: $spacing-s;
   background-color: white;
   box-shadow: var(--box-shadow);
   border-radius: 40px;
@@ -37,17 +42,12 @@
   color: $brown;
 }
 
-.image-container-info {
-  @include flex-center;
-  gap: $spacing-3xl;
-  padding: $spacing-m 0;
-}
-
-.image {
-  max-width: 50%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.sub-title {
+  font-size: $font-size-sub-title-desktop;
+  text-align: center;
+  line-height: $line-height;
+  font-family: $font-family;
+  color: $dark-little-cherry;
 }
 
 @media only screen and (max-width: 430px) {
@@ -55,28 +55,31 @@
     font-size: $font-size-second-title-mobile;
   }
 
-  .image-container-info {
-    flex-wrap: wrap;
-    gap: $spacing-m;
-    padding: $spacing-m;
-  }
-
-  .image {
-    max-width: 100%;
-  }
-
   .text-box {
-    width: auto;
+    width: 30%;
   }
 
   .text {
     font-size: $font-size-mobile;
+  }
+
+  .sub-title {
+    font-size: $font-size-sub-title-mobile;
+  }
+
+  .variations-section {
+    flex-wrap: wrap;
+  }
+
+  .info-container {
+    flex-wrap: wrap;
   }
 }
 
 @media only screen and (min-width: 431px) and (max-width: 768px) {
   .text-box {
     width: auto;
+    margin: $spacing-s;
   }
 
   .title {
@@ -87,9 +90,8 @@
     font-size: $font-size-netbook-tablet;
   }
 
-  .image-container-info {
-    gap: $spacing-m;
-    padding: $spacing-m $spacing-s;
+  .sub-title {
+    font-size: $font-size-sub-title-netbook-tablet;
   }
 }
 
@@ -98,17 +100,16 @@
     width: auto;
   }
 
-  .text {
-    font-size: $font-size-netbook-tablet;
-  }
-
   .title {
     font-size: $font-size-second-title-netbook-tablet;
   }
 
-  .image-container-info {
-    gap: $spacing-m;
-    padding: $spacing-m $spacing-m;
+  .text {
+    font-size: $font-size-netbook-tablet;
+  }
+
+  .sub-title {
+    font-size: $font-size-sub-title-netbook-tablet;
   }
 }
 
