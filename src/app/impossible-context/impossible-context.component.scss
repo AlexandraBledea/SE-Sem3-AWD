@@ -78,8 +78,7 @@
 
 @media only screen and (min-width: 431px) and (max-width: 768px) {
   .text-box {
-    width: auto;
-    margin: $spacing-s;
+    width: 40%;
   }
 
   .title {
@@ -97,7 +96,7 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .text-box {
-    width: auto;
+    width: 40%;
   }
 
   .title {

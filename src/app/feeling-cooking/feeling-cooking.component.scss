@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.variations-section {
+.feeling-cooking-section {
   @include flex-center;
   gap: $spacing-s;
   flex-direction: column;
@@ -22,12 +22,11 @@
 
 .info-container {
   @include flex-center;
-  flex-direction: row;
-  gap: $spacing-m;
 }
 
 .text-box {
-  width: 20%;
+  width: 80%;
+  height: 50%;
   padding: $spacing-s;
   background-color: white;
   box-shadow: var(--box-shadow);
@@ -41,12 +40,18 @@
   color: $brown;
 }
 
-.sub-title {
-  font-size: $font-size-sub-title-desktop;
-  text-align: center;
-  line-height: $line-height;
-  font-family: $font-family;
-  color: $dark-little-cherry;
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xl;
+  padding: $spacing-l;
+}
+
+.image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
 }
 
 @media only screen and (max-width: 430px) {
@@ -55,30 +60,36 @@
   }
 
   .text-box {
-    width: 30%;
+    width: 70%;
   }
 
   .text {
     font-size: $font-size-mobile;
   }
 
-  .sub-title {
-    font-size: $font-size-sub-title-mobile;
-  }
-
-  .variations-section {
+  .feeling-cooking-section {
     flex-wrap: wrap;
   }
 
   .info-container {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
+
+  .image-container {
+    flex-direction: column;
+    gap: $spacing-s;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 431px) and (max-width: 768px) {
   .text-box {
-    width: 30%;
-    margin: $spacing-xs;
+    width: 80%;
+    margin: $spacing-s;
   }
 
   .title {
@@ -89,15 +100,19 @@
     font-size: $font-size-netbook-tablet;
   }
 
-  .sub-title {
-    font-size: $font-size-sub-title-netbook-tablet;
+  .image-container {
+    gap: $spacing-s;
+  }
+
+  .image {
+    max-width: 40%;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .text-box {
-    width: 30%;
-    margin: $spacing-xs;
+    width: 80%;
+    margin: $spacing-m;
   }
 
   .title {
@@ -108,8 +123,12 @@
     font-size: $font-size-netbook-tablet;
   }
 
-  .sub-title {
-    font-size: $font-size-sub-title-netbook-tablet;
+  .image-container {
+    gap: $spacing-s;
+  }
+
+  .image {
+    max-width: 40%;
   }
 }
 
